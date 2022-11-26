@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flow-space bg-dark">
+    <h1>Counter using HTML</h1>
+
+    <p class="underline-text">
+      Your Current Count is : <strong class="count">0</strong>
+    </p>
+
+    <p class="error" hidden>Error: Cannot go below 0</p>
+
+    <div class="flex">
+      <button id="decrement" class="btn">Decrement</button>
+      <button id="increment" class="btn">Increment</button>
+      <button id="clear" class="btn">Clear</button>
+    </div>
+
+    <button id="toggleTheme" class="btn">Toggle Theme</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

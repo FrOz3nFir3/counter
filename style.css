@@ -1,0 +1,54 @@
+/* utility classes */
+.bg-dark{
+    --bg:black;
+    --fg:white;
+}
+.bg-light{
+    --bg:white;
+    --fg:black;
+}
+.flow-space > * + * {
+    margin-top: 2rem;
+}
+.underline-text {
+    display: inline;
+    border-bottom: solid 2px var(--fg);
+    padding-bottom: 10px;
+}
+.flex {
+    display: flex;
+    gap: 1em;
+}
+@media (max-width: 600px) {
+    .flex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.btn{
+    border:none;
+    padding: 10px 35px;
+}
+.error{
+    margin: 3em 0;
+    color: red;
+}
+
+/* individual elements styling*/
+body{
+    background: var(--bg);
+    color: var(--fg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h1{
+    font-weight: normal;
+}
+
+#clear{
+    background: var(--bg);
+    color: var(--fg);
+    border: 1px solid var(--fg);
+    padding: 10px 50px;
+}
