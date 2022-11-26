@@ -26,8 +26,12 @@
     }
 }
 .btn{
+    cursor: pointer;
     border:none;
     padding: 10px 35px;
+}
+.btn:hover{
+    opacity: .7;
 }
 .error{
     margin: 3em 0;
