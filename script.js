@@ -17,14 +17,19 @@ function changeCount(event) {
 
   if (action == "increment") {
     count.innerText = currentCount + 1;
+    clearButton.hidden = false;
   } else if (action == "decrement") {
     if (currentCount > 0) {
       count.innerText = currentCount - 1;
+      if (currentCount == 1) {
+        clearButton.hidden = true;
+      }
     } else {
       error.hidden = false;
     }
   } else if (action == "clear") {
     count.innerText = 0;
+    clearButton.hidden = true;
   }
 }
 toggleButton.addEventListener("click", changeTheme);
